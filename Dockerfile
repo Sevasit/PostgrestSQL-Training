@@ -1,0 +1,9 @@
+FROM postgres:latest
+
+ENV POSTGRES_DB=EXEMPLOYYEE
+ENV POSTGRES_USER=Sevasit1234
+ENV POSTGRES_PASSWORD=Al18axSjmJ0QqTG
+
+COPY init.sql /docker-entrypoint-initdb.d/
+
+EXPOSE 5432
